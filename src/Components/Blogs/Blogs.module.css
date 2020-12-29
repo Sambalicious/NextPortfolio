@@ -1,0 +1,37 @@
+.blog__img img {
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 720px) {
+  .blog__text {
+    margin: 15px 0;
+  }
+}
+
+.blog__div {
+  text-align: left;
+  margin-right: 6px;
+}
+
+.mute {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+.wrapper__right__item__flex__blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper__right__item__flex__blog {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .wrapper__right__item__flex__blog img {
+    width: 100%;
+  }
+}
