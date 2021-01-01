@@ -27,7 +27,7 @@ const Home = () => {
               alt=""
               width="100%"
               style={{ objectFit: "cover", borderRadius: "12px" }}
-              height="450px"
+              height="500px"
             />
 
             <h3 className={styles.name}>Samuel Ayegbusi</h3>

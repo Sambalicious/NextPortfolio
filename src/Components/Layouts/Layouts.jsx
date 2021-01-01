@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaLightbulb } from "react-icons/fa";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import MadeWithLove from "react-made-with-love";
 import Head from "next/head";
 
 import styles from "./Layouts.module.css";
@@ -50,7 +51,13 @@ const Layout = ({ children, title }) => {
         <ScrollToTop />
 
         <footer className={styles.footer}>
-          Sambalicious &copy; {new Date().getFullYear()}
+          <MadeWithLove
+            by="Sambalicious"
+            emoji={{
+              verb: "Built",
+            }}
+          />
+          &copy; {new Date().getFullYear()}
         </footer>
       </div>
     </div>

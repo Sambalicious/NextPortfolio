@@ -13,7 +13,7 @@ const Project = ({ img, tools, about, title }) => {
       </div>
       <div>
         <p className={styles.mute}>{tools}</p>
-        <h4>{title}</h4>
+        <h4 className={styles.bold}>{title}</h4>
 
         <div className={styles.mute}> {about}</div>
 
