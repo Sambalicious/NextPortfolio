@@ -26,8 +26,8 @@ const Home = () => {
               src={desktop}
               alt=""
               width="100%"
-              style={{ objectFit: "cover" }}
-              height="400px"
+              style={{ objectFit: "cover", borderRadius: "12px" }}
+              height="450px"
             />
 
             <h3 className={styles.name}>Samuel Ayegbusi</h3>
@@ -134,26 +134,27 @@ const Home = () => {
       <div className={styles.wrapper_right}>
         <div>
           <h3 className={styles.tools}>Tools</h3>
-          <ul className={styles.mute}>
-            <li> HTML5</li>
-            <li> CSS3</li>
-            <li> Javascript</li>
-            <li> ReactJS</li>
-            <li> NextJS</li>
-            <li> MongoDB</li>
-            <li> TailwindCSS</li>
-            <li> Bootstrap</li>
-            <li>SCSS</li>
-            <li>Firebase</li>
-            <li>RestAPI</li>
-            <li>C#</li>
-          </ul>
+
+          <div className={styles.tools__items}>
+            <h1>HTML</h1>
+            <h1>CSS3</h1>
+            <h1>Javascript</h1>
+            <h1> ReactJS</h1>
+            <h1> NextJS</h1>
+            <h1>MongoDB</h1>
+            <h1> TailwindCSS</h1>
+            <h1> Bootstrap</h1>
+            <h1>Firebase</h1>
+            <h1>RestAPI</h1>
+            <h1>C#</h1>
+            <h1>Github</h1>
+          </div>
         </div>
 
         <h3 className={styles.projects}>Projects</h3>
         <div className={styles.wrapper__right__item}>
           <Project
-            tools={"#Html, #css , #Javascript, #React"}
+            tools={"#Html, #CSS , #Javascript, #React"}
             img={home}
             title={"Recipe"}
             about={
@@ -161,7 +162,7 @@ const Home = () => {
             }
           />
           <Project
-            tools={"#Html, #css , #Javascript, #React"}
+            tools={"#Html, #CSS , #Javascript, #React"}
             img={home}
             title={"Recipe"}
             about={

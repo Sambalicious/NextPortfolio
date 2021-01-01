@@ -112,3 +112,14 @@
   align-items: center;
   width: 60%;
 }
+
+.tools__items h1 {
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 0.15em;
+
+  color: #4f4f4f;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-image: linear-gradient(#40e0d0, #ff8c00, #ff0080) 1;
+}
