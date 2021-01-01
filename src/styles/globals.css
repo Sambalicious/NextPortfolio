@@ -16,11 +16,12 @@
   --text-color: #f0f0f0;
   --text-color-secondary: #58a6ff;
   --primary-color: #21b6b7;
-  --background-color: #010409;
+  --background-color: rgb(21, 32, 43);
   --background-color-dark: #3c393f;
   --background-color-light: #161b22;
   --border: #30363d;
   --button--background: #5c94e1;
+  --box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
 }
 
 html,

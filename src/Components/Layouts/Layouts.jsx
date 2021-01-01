@@ -51,12 +51,14 @@ const Layout = ({ children, title }) => {
         <ScrollToTop />
 
         <footer className={styles.footer}>
-          <MadeWithLove
-            by="Sambalicious"
-            emoji={{
-              verb: "Built",
-            }}
-          />
+          <div>
+            <MadeWithLove
+              by="Sambalicious"
+              emoji={{
+                verb: "Built",
+              }}
+            />{" "}
+          </div>
           &copy; {new Date().getFullYear()}
         </footer>
       </div>

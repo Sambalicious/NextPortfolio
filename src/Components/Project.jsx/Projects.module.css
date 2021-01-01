@@ -15,9 +15,15 @@
 
 .button__flex {
   display: flex;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 889px) {
+  .button__flex {
+    width: 100%;
+  }
 }
 
 .mute {

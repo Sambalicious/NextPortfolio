@@ -59,15 +59,13 @@ const Home = () => {
             </div>
 
             <p className={styles.motivation}>
-              Self-motivated developer, who is willing to learn and create
-              outstanding UI applications.
+              Self-motivated, self taught developer, who is willing to learn and
+              create outstanding UI applications.
             </p>
 
             <p>Connect with me</p>
             <div className={styles.contact__flex}>
-              <IconContext.Provider
-                value={{ size: "1.5rem", className: "mr-4 my-2" }}
-              >
+              <IconContext.Provider value={{ size: "1.5rem" }}>
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
