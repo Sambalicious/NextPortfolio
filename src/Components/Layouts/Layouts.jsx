@@ -3,7 +3,6 @@ import { FaMoon, FaLightbulb } from "react-icons/fa";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import MadeWithLove from "react-made-with-love";
 import Head from "next/head";
-
 import styles from "./Layouts.module.css";
 
 const Layout = ({ children, title }) => {
