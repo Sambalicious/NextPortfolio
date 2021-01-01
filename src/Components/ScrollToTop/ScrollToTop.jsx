@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import styles from "./ScrollToTop.module.css";
-import { IoIosArrowDropup } from "react-icons/io";
+
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
 
