@@ -1,6 +1,6 @@
 import styles from "./Projects.module.css";
 
-const Project = ({ img, tools, about, title }) => {
+const Projects = ({ img, tools, about, title }) => {
   return (
     <div className={styles.wrapper__right__item__flex__project}>
       <div className={styles.projects__img}>
@@ -26,4 +26,4 @@ const Project = ({ img, tools, about, title }) => {
   );
 };
 
-export default Project;
+export default Projects;

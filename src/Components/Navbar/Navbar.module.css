@@ -1,0 +1,267 @@
+.header {
+  background-color: #2d2e33;
+  /*header backgroung color can be replaced with color of choice*/
+  color: white;
+  font-family: verdana;
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.header-logo {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  margin: 0;
+  padding-left: 0px;
+}
+
+.nav-list-item {
+  list-style: none;
+  float: left;
+  padding: 0 20px;
+}
+
+.list-link {
+  font-size: 0.88rem;
+}
+
+.list-link:hover {
+  color: #bababa;
+}
+
+.menu-button {
+  display: inline-block;
+}
+
+/************ Extra buttons/icons at the right ************/
+
+.nav-extras {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  right: 2%;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 100px;
+  padding: 0.5rem 0.9rem;
+  margin: 0 0 0 20px;
+}
+
+.nav-button:hover {
+  background-color: rgb(2, 158, 2);
+  border: 1px solid rgb(2, 158, 2);
+  color: white;
+}
+
+.nav-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-button a:hover {
+  color: white;
+}
+
+.nav-extras .nav-icons a {
+  color: #e4dcdc;
+  padding: 0 5px;
+}
+
+.nav-extras .nav-icons a:hover {
+  color: #bababa;
+}
+
+/************ Mobile Header ************/
+
+@media (max-width: 982px) {
+  .header {
+    display: block;
+    padding: 0px;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .header-logo {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+    position: static;
+    text-align: center;
+  }
+
+  .nav-extras {
+    display: block;
+    position: static;
+    padding: 2% 0;
+  }
+
+  .nav-button {
+    margin: 0 0 0 0;
+  }
+
+  .nav-extras .nav-icons {
+    padding: 20px 5px 0;
+  }
+
+  /**** Nav Animation ****/
+
+  .toggle-nav {
+    display: block;
+    padding: 0 0 20px;
+  }
+
+  .nav-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list-item {
+    list-style: none;
+    float: none;
+    padding: 2% 5%;
+  }
+
+  .menu-bar {
+    background-color: #dedcdc;
+    width: 1.5rem;
+    height: 2px;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+  /**** Menu Button Animation ****/
+
+  .hide-bar-two {
+    animation: bar-hide 1s linear forwards;
+  }
+
+  @keyframes bar-hide {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  .cross-bar-one {
+    animation: bar-cross-left 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-left {
+    10% {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    50% {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    100% {
+      transform: rotate(45deg) translate(3px, 2px);
+    }
+  }
+
+  .cross-bar-three {
+    animation: bar-cross-right 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-right {
+    10% {
+      transform: rotate(-45deg);
+    }
+
+    60% {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    100% {
+      transform: rotate(-45deg) translate(1px, -2px);
+    }
+  }
+}
+
+/************ Transparent Header ************/
+
+.header-transparent {
+  background-color: transparent;
+  color: #2d2e33;
+}
+
+.header-transparent .link {
+  color: #2d2e33;
+}
+
+.header-transparent .list-link:hover {
+  color: #6a6b70;
+}
+
+.header-transparent .menu-bar {
+  background-color: #2d2e33;
+}
+
+.header-transparent .nav-button {
+  background-color: transparent;
+  border: 1px solid #2d2e33;
+  color: #2d2e33;
+  border-radius: 100px;
+}
+
+.header-transparent .nav-button:hover {
+  background-color: rgb(2, 158, 2);
+  border: 1px solid rgb(2, 158, 2);
+  color: white;
+}
+
+.header-transparent .nav-extras .nav-icons a {
+  color: grey;
+}
+
+.header-transparent .nav-extras .nav-icons a:hover {
+  color: #2d2e33;
+}
+
+.header-transparent .nav-button a {
+  color: #2d2e33;
+  text-decoration: none;
+}
+
+.header-transparent .nav-button a:hover {
+  color: white;
+}

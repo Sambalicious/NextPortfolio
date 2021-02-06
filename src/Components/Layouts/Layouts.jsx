@@ -4,8 +4,14 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import MadeWithLove from "react-made-with-love";
 import Head from "next/head";
 import styles from "./Layouts.module.css";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children, title }) => {
+  const [openNavBarState, setOpenNavBarState] = useState(false);
+  const handleNavbar = () => {
+    setOpenNavBarState(!openNavBarState);
+    // this.setState({ navbarOpen: !this.state.navbarOpen });
+  };
   const [theme, setTheme] = useState("dark");
 
   const switchTheme = () => {
@@ -36,7 +42,9 @@ const Layout = ({ children, title }) => {
         <title>{title}</title>
         <link rel="icon" href="/logo.svg" />
       </Head>
-
+      <div>
+        <Navbar navbarState={openNavBarState} handleNavbar={handleNavbar} />
+      </div>
       <main className={styles.main}>{children}</main>
       <div>
         <button onClick={switchTheme} className={styles.theme}>
@@ -58,7 +66,7 @@ const Layout = ({ children, title }) => {
               }}
             />{" "}
           </div>
-          &copy; {new Date().getFullYear()}
+          Copyright &copy; {new Date().getFullYear()}
         </footer>
       </div>
     </div>

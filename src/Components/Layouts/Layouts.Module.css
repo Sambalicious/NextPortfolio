@@ -1,10 +1,13 @@
 .container {
-  padding: 14px;
+  padding: 0 14px;
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
 
   margin: 0 auto;
+}
+.main {
+  margin-top: 100px;
 }
 
 .header {

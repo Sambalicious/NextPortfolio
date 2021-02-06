@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import Link from "next/link";
 import {
   FaLinkedinIn,
   FaGithub,
@@ -12,10 +12,12 @@ import { MdContactMail } from "react-icons/md";
 import desktop from "../../../public/desktop.jpg";
 import home from "../../../public/home.png";
 import omnibiz from "../../../public/omnibiz.png";
+import dashboard from "../../../public/dashboard.png";
 import vgg from "../../../public/vgg.png";
 import Experience from "../Experience/Experience.jsx";
-import Project from "../Project.jsx/Projects";
+import Project from "../Projects/Projects.jsx";
 import Blog from "../Blogs/Blogs";
+import styles from "./Home.module.css";
 const Home = () => {
   return (
     <div className={styles.wrapper}>
@@ -27,7 +29,7 @@ const Home = () => {
               alt=""
               width="100%"
               style={{ objectFit: "cover", borderRadius: "12px" }}
-              height="500px"
+              height="600px"
             />
 
             <h3 className={styles.name}>Samuel Ayegbusi</h3>
@@ -55,11 +57,11 @@ const Home = () => {
               <div style={{ marginRight: "4px" }}>
                 <FiPhone />
               </div>
-              <p> Click to Call me</p>
+              <p> Tap here to call me</p>
             </div>
 
             <p className={styles.motivation}>
-              Self-motivated, self taught developer, who is willing to learn and
+              Self-motivated, self-taught developer, who is willing to learn and
               create outstanding UI applications.
             </p>
 
@@ -146,32 +148,43 @@ const Home = () => {
             <h1>RestAPI</h1>
             <h1>C#</h1>
             <h1>Github</h1>
+            <h1>Styled-Components</h1>
+            <h1>Netlify</h1>
+            <h1>Vercel</h1>
+            <h1>Heroku</h1>
           </div>
         </div>
-
         <h3 className={styles.projects}>Projects</h3>
         <div className={styles.wrapper__right__item}>
           <Project
-            tools={"#Html, #CSS , #Javascript, #React"}
+            tools={"#React, #TailwindCSS , #Imgur API, #Cloudinary API"}
             img={home}
-            title={"Recipe"}
+            title={"EduGrid"}
             about={
               " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam estdui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
             }
           />
           <Project
-            tools={"#Html, #CSS , #Javascript, #React"}
+            tools={"#NextJS, #Rest API, #React"}
             img={home}
-            title={"Recipe"}
+            title={"World Ranks"}
             about={
-              " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam estdui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+              " A NextJs Application that provides informations about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
+            }
+          />
+          <Project
+            tools={"#Rest API, #React, #PWA, #SCSS"}
+            img={dashboard}
+            title={"Omnibiz Dashboard App"}
+            about={
+              " In this project, I sharpened my NextJs knowledge by building world Countries App while consuming a third party RestAPI.  ."
             }
           />
         </div>
 
-        <div>
+        <Link href="/blogs">
           <h3 className={styles.blog}>Blogs</h3>
-        </div>
+        </Link>
         <div className={styles.wrapper__right__item}>
           <Blog
             description={
