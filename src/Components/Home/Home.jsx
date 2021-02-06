@@ -107,7 +107,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <h3 className={styles.experience}>Experiences</h3>
+        <h3 id="experience" className={styles.experience}>
+          Experiences
+        </h3>
         <div className={styles.wrapper__left__item}>
           <Experience
             img={omnibiz}
@@ -133,7 +135,9 @@ const Home = () => {
 
       <div className={styles.wrapper_right}>
         <div>
-          <h3 className={styles.tools}>Tools</h3>
+          <h3 id="tools" className={styles.tools}>
+            Tools
+          </h3>
 
           <div className={styles.tools__items}>
             <h1>HTML</h1>
@@ -154,7 +158,9 @@ const Home = () => {
             <h1>Heroku</h1>
           </div>
         </div>
-        <h3 className={styles.projects}>Projects</h3>
+        <h3 id="projects" className={styles.projects}>
+          Projects
+        </h3>
         <div className={styles.wrapper__right__item}>
           <Project
             tools={"#React, #TailwindCSS , #Imgur API, #Cloudinary API"}

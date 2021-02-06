@@ -9,7 +9,6 @@ const Layout = ({ children, title }) => {
   const [openNavBarState, setOpenNavBarState] = useState(false);
   const handleNavbar = () => {
     setOpenNavBarState(!openNavBarState);
-    // this.setState({ navbarOpen: !this.state.navbarOpen });
   };
   const [theme, setTheme] = useState("dark");
 

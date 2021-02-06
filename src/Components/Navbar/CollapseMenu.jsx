@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Link from "next/link";
 import { useSpring, animated } from "react-spring";
 
 const CollapseMenu = (props) => {
@@ -20,19 +20,19 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <Link href="/#tools" onClick={props.handleNavbar}>
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <Link href="/#experience" onClick={props.handleNavbar}>
               Experience
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <Link href="/#projects" onClick={props.handleNavbar}>
               Projects
-            </a>
+            </Link>
           </li>
         </NavLinks>
       </CollapseWrapper>

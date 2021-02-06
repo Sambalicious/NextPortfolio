@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
-
+import Link from "next/link";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
@@ -25,9 +25,9 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <a href="/">Contact</a>
-            <a href="/">Projects</a>
-            <a href="/">Experience</a>
+            <Link href="/#tools">Contact</Link>
+            <Link href="/#project">Projects</Link>
+            <Link href="/#experience">Experience</Link>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
