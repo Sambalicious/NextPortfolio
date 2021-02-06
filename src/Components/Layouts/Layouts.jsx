@@ -58,14 +58,7 @@ const Layout = ({ children, title }) => {
         <ScrollToTop />
 
         <footer className={styles.footer}>
-          <div>
-            <MadeWithLove
-              by="Sambalicious"
-              emoji={{
-                verb: "Built",
-              }}
-            />{" "}
-          </div>
+          <div>Made by sambalicious</div>
           Copyright &copy; {new Date().getFullYear()}
         </footer>
       </div>
