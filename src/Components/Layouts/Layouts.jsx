@@ -57,7 +57,7 @@ const Layout = ({ children, title }) => {
         <ScrollToTop />
 
         <footer className={styles.footer}>
-          <div>Made by sambalicious</div>
+          <div>Made by Sambalicious</div>
           Copyright &copy; {new Date().getFullYear()}
         </footer>
       </div>
